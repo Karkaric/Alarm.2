@@ -10,7 +10,7 @@ android {
     defaultConfig {
         applicationId = "com.example.alarm"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 32
         versionCode = 1
         versionName = "1.0"
 
@@ -38,7 +38,8 @@ android {
 }
 
 dependencies {
-
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
+    implementation ("androidx.fragment:fragment-ktx:1.6.2")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
